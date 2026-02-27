@@ -1,0 +1,22 @@
+# Datasets (too large for GitHub; download via setup.py)
+data/fear_greed.csv
+data/trader_data.csv
+
+# Generated outputs (reproducible by running analysis.py)
+outputs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env/
