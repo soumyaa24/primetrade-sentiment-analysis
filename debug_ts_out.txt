@@ -1,0 +1,36 @@
+=== TRADER DATA TIMESTAMP DEBUG ===
+Timestamp IST col sample:
+  '02-12-2024 22:50'
+  '02-12-2024 22:50'
+  '02-12-2024 22:50'
+  '02-12-2024 22:50'
+  '02-12-2024 22:50'
+  '02-12-2024 22:50'
+  '02-12-2024 22:50'
+  '02-12-2024 22:50'
+  '02-12-2024 22:50'
+  '02-12-2024 22:50'
+
+Timestamp (numeric) sample:
+  1730000000000.0
+  1730000000000.0
+  1730000000000.0
+  1730000000000.0
+  1730000000000.0
+
+Testing pd.to_datetime on Timestamp IST...
+[Timestamp('2024-12-02 22:50:00'), Timestamp('2024-12-02 22:50:00'), Timestamp('2024-12-02 22:50:00')]
+
+Numeric Timestamp min: 1680000000000.0
+Numeric Timestamp max: 1750000000000.0
+Interpretation: Unix milliseconds
+Min date: 2023-03-28 16:10:00
+Max date: 2025-06-15 20:36:40
+
+FG date sample:
+  '2018-02-01'
+  '2018-02-02'
+  '2018-02-03'
+  '2018-02-04'
+  '2018-02-05'
+FG classification unique: ['Fear', 'Extreme Fear', 'Neutral', 'Greed', 'Extreme Greed']

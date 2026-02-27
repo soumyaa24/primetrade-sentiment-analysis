@@ -1,0 +1,21 @@
+import pandas as pd, numpy as np
+
+daily  = pd.read_csv('outputs/daily_account_metrics.csv')
+merged = pd.read_csv('outputs/merged_trades.csv')
+
+print('=== CRITICAL SANITY CHECK ===')
+print('Unique fear dates in daily:', daily[daily.sentiment=='Fear']['date'].nunique())
+print('Unique greed dates in daily:', daily[daily.sentiment=='Greed']['date'].nunique())
+print()
+print('All unique dates in daily:', daily['date'].nunique())
+print('Date sample:', daily['date'].unique()[:10].tolist())
+print()
+print('Merged date nunique:', merged['date'].nunique())
+print('Merged date sample:', merged['date'].unique()[:10].tolist())
+print()
+print('Sentiment in merged:', merged['sentiment'].value_counts().to_dict())
+print()
+fg_raw = pd.read_csv('data/fear_greed.csv')
+td_raw = pd.read_csv('data/trader_data.csv')
+print('FG date sample:', fg_raw['date'].head(5).tolist())
+print('TD Timestamp IST sample:', td_raw['Timestamp IST'].head(5).tolist())
