@@ -1,0 +1,10 @@
+data/fear_greed.csv
+data/trader_data.csv
+outputs/
+__pycache__/
+*.pyc
+.DS_Store
+inspect_data.py
+inspect_out.txt
+get_numbers.py
+get_numbers2.py
